@@ -29,12 +29,20 @@ Examples:
     }
 }
 
+function isInputANumber(inputValue) {
+    return inputValue.length > 0 && !isNaN(inputValue);
+}
+
 function handleInputChange(e) {
     const inputValue = e.target.value;
-    const inputValueAsNumber = Number(inputValue);
-    const newMessage = getMessage(inputValueAsNumber);
-
-    updateMessage(newMessage);    
+    
+    if (isInputANumber(inputValue)) {
+        const inputValueAsNumber = Number(inputValue);
+        const newMessage = getMessage(inputValueAsNumber);
+        updateMessage(newMessage);  
+    } else {
+        updateMessage('')
+    }
 }
 
 function addEventListenerToInput() {
