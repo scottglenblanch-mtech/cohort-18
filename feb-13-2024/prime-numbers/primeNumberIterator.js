@@ -21,8 +21,6 @@ function getPrimeNumberIterator() {
             return listOfPrimeNumbers[currentIndex];
         }
     }
-
-
 }
 
 function isAPrimeNumber(number) {
