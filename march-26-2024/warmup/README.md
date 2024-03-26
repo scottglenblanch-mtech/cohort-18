@@ -9,7 +9,8 @@ Pending Transaction
 
 - Button to click to add the purchase to a Shopping Cart
 
-- Afte the button, list out each pending transaction with
+
+- After the button, list out each pending transaction with
   - name of item
   - cost of single item
   - number of items
