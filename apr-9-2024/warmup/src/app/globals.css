@@ -1,0 +1,41 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+}
+
+.row {
+  display: flex;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+}
+
+.cell.black {
+  background: black;
+}
+
+.cell.red {
+  background: red;
+}
+
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.player1 {
+  background: yellowgreen;
+}
+
+.player2 {
+  background: white;
+}
